@@ -184,7 +184,7 @@ func BenchmarkMultiGoroutineStoreAndLoadDifferent(b *testing.B) {
 			for i := 0; i < b.N; i++ {
 				go func(k int) {
 					for j := 0; j < storeNum; j++ {
-						val := strconv.Itoa(i)
+						val := strconv.Itoa(k)
 						bm.store(m, val, val)
 					}
 					finished <- struct{}{}
