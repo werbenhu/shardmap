@@ -11,7 +11,7 @@
 
 # shardmap
 
-## 一个线程安全、支持并发的map。
+## 一个线程安全、支持并发的map，比sync.Map有更好的写入性能。
 
 `shardmap` 结合了 [concurrent-map](https://github.com/orcaman/concurrent-map) 和 [sync.Map](https://github.com/golang/go/tree/master/src/sync) 各自的优点, 在sync.Map的基础上进行分片，使其具备更好的写入性能。
 

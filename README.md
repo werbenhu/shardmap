@@ -12,7 +12,7 @@
 
 # shardmap
 
-## A Thread-Safe Concurrent Map
+## A thread-safe, concurrent map with better write performance compared to sync.Map.
 
 `shardmap` combines the strengths of both [concurrent-map](https://github.com/orcaman/concurrent-map) and [sync.Map](https://github.com/golang/go/tree/master/src/sync), building upon the foundation of sync.Map by introducing sharding, resulting in better write performance compared to sync.Map
 
