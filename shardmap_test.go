@@ -90,12 +90,25 @@ func TestFnv1a32(t *testing.T) {
 	}{
 		{"test_string", 2101758991},
 		{42, 494316163},
+		{int8(42), 494316163},
+		{int16(42), 494316163},
+		{int32(42), 494316163},
+		{int64(42), 494316163},
+		{uint(42), 494316163},
+		{uint8(42), 494316163},
+		{uint16(42), 494316163},
+		{uint32(42), 494316163},
+		{uintptr(42), 494316163},
 	}
 
 	for _, test := range tests {
 		result := fnv1a32(test.key)
 		assert.Equal(t, test.expected, result, "Expected hash %d for key %v, got %d", test.expected, test.key, result)
 	}
+
+	assert.Panics(t, func() {
+		fnv1a32(3.145)
+	})
 }
 
 func TestConcurrentLoadPanic(t *testing.T) {
