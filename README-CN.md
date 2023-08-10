@@ -1,6 +1,16 @@
+<div align='center'>
+<a href="https://github.com/werbenhu/eventbus/actions"><img src="https://github.com/werbenhu/eventbus/workflows/Go/badge.svg"></a>
+<a href="https://goreportcard.com/report/github.com/werbenhu/eventbus"><img src="https://goreportcard.com/badge/github.com/werbenhu/eventbus"></a>
+<a href="https://coveralls.io/github/werbenhu/eventbus?branch=master"><img src="https://coveralls.io/repos/github/werbenhu/eventbus/badge.svg?branch=master"></a>   
+<a href="https://github.com/werbenhu/eventbus"><img src="https://img.shields.io/github/license/mashape/apistatus.svg"></a>
+<a href="https://pkg.go.dev/github.com/werbenhu/eventbus"><img src="https://pkg.go.dev/badge/github.com/werbenhu/eventbus.svg"></a>
+</div>
+
+
+[English](README.md) | [简体中文](README-CN.md)
+
 # shardmap
 
-## A Thread-Safe Concurrent Map
 ## 一个线程安全、支持并发的map。
 
 `shardmap` 结合了 [concurrent-map](https://github.com/orcaman/concurrent-map) 和 [sync.Map](https://github.com/golang/go/tree/master/src/sync) 各自的优点, 在sync.Map的基础上进行分片，使其具备更好的写入性能。

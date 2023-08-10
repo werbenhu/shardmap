@@ -1,3 +1,15 @@
+
+<div align='center'>
+<a href="https://github.com/werbenhu/shardmap/actions"><img src="https://github.com/werbenhu/shardmap/workflows/Go/badge.svg"></a>
+<a href="https://goreportcard.com/report/github.com/werbenhu/shardmap"><img src="https://goreportcard.com/badge/github.com/werbenhu/shardmap"></a>
+<a href="https://coveralls.io/github/werbenhu/shardmap?branch=master"><img src="https://coveralls.io/repos/github/werbenhu/shardmap/badge.svg?branch=master"></a>   
+<a href="https://github.com/werbenhu/shardmap"><img src="https://img.shields.io/github/license/mashape/apistatus.svg"></a>
+<a href="https://pkg.go.dev/github.com/werbenhu/shardmap"><img src="https://pkg.go.dev/badge/github.com/werbenhu/shardmap.svg"></a>
+</div>
+
+
+[English](README.md) | [简体中文](README-CN.md)
+
 # shardmap
 
 ## A Thread-Safe Concurrent Map
